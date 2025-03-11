@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'tab-inicial',
     loadChildren: () => import('./page/tab-inicial/tab-inicial.module').then( m => m.TabInicialPageModule)
   },
+  {
+    path: 'gallery',
+    loadChildren: () => import('./page/gallery/gallery.module').then( m => m.GalleryPageModule)
+  },
 ];
 
 @NgModule({
